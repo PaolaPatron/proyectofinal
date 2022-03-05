@@ -1,0 +1,1231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: rgb(238, 124, 7);
+  background: linear-gradient(
+    145deg,
+    rgb(228, 120, 12) 10%,
+    rgb(240, 142, 44) 98%
+  );
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.menu {
+  list-style-type: none;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    145deg,
+    rgba(231, 231, 231, 1) 3%,
+    rgba(250, 250, 250, 1) 98%
+  );
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo navlinks";
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+  justify-items: start;
+  padding: 8px 35px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+}
+.menu a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(238, 124, 7);
+  font-size: 1.2rem;
+}
+
+.menu img {
+  width: 70px;
+  height: 70px;
+  margin-left: 1.2rem;
+}
+
+.menu .logo {
+  grid-area: logo;
+}
+
+.menu .navlinks {
+  grid-area: navlinks;
+  justify-self: end;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Martel Sans", sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Martel Sans", sans-serif;
+}
+
+p {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0px;
+}
+
+/* empieza inicio */
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2% 90% 8%;
+  grid-template-areas: "header" "contenido" "footer";
+  width: 100%;
+}
+
+.header {
+  grid-area: header;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.section1 {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title titleImg";
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+
+.section1 .title {
+  grid-area: title;
+  text-align: left;
+  padding-left: 6.5rem;
+}
+
+.section1 .titleImg {
+  grid-area: titleImg;
+}
+
+.section1 h1 {
+  font-size: 3.5rem;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.section1 p {
+  font-size: 2rem;
+  position: relative;
+  bottom: 1.7rem;
+}
+
+.section1 button {
+  font-size: 1.7rem;
+  position: relative;
+  color: rgb(238, 124, 7);
+  font-weight: bold;
+}
+
+.section1 button:hover {
+  box-shadow: 2px 2px 5px rgb(161, 81, 0);
+}
+
+.section1 img {
+  width: 75%;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+  padding-bottom: 3.7rem;
+}
+
+.section2 {
+  padding: 3rem 4rem;
+  height: 40rem;
+  width: 100%;
+  background: rgb(78, 172, 49);
+  background: linear-gradient(
+    145deg,
+    rgba(78, 172, 49, 1) 3%,
+    rgba(31, 155, 55, 1) 98%
+  );
+  color: white;
+}
+
+.section2 h2 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.section2 .servicioGrid {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "uno dos tres";
+  justify-items: center;
+  width: 75%;
+}
+
+.section2 .uno {
+  grid-area: uno;
+}
+
+.section2 .dos {
+  grid-area: dos;
+}
+
+.section2 .tres {
+  grid-area: tres;
+}
+
+.servicio {
+  width: 80%;
+  background-color: rgba(250, 250, 250, 1);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+
+.servicio:hover {
+  box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+  transform: scale(1.03);
+}
+
+.servicio a {
+  text-decoration: none;
+  color: rgba(31, 155, 55, 1);
+}
+
+.servicio h3 {
+  margin: 10px 0px;
+  padding: 0px 10px;
+  font-size: 1.5rem;
+}
+
+.servicio img {
+  width: 35%;
+  margin: 10px;
+}
+
+.servicio .buttonServicio {
+  margin-top: 15px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0px;
+  background-color: rgb(78, 172, 49);
+  color: white;
+  width: 60%;
+
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.servicio .buttonServicio:hover {
+  width: 70%;
+  padding-right: 33px;
+  padding-left: 8px;
+}
+
+.servicio .buttonServicio:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(./imagenes/arrow_icon.png);
+  background-size: cover;
+  background-repeat: no repeat;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 12px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.servicio .buttonServicio:hover:after {
+  opacity: 1;
+  right: 16px;
+}
+
+.section3 {
+  height: 30rem;
+  width: 100%;
+  margin-bottom: 12rem;
+  padding: 0px 9rem;
+  padding-top: 3rem;
+  color: white;
+}
+
+.section3 h2 {
+  margin-top: 2.1rem;
+  margin-bottom: 2.7rem;
+}
+
+.doulaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0px auto;
+  grid-template-areas: "doula doulaImg";
+}
+
+.doulaGrid .doula {
+  grid-area: doula;
+}
+
+.doulaGrid .doulaImg {
+  grid-area: doulaImg;
+}
+
+.doula p {
+  line-height: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.doulaGrid h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.doulaGrid img {
+  width: 25rem;
+}
+
+.doulaGrid button {
+  color: rgb(238, 124, 7);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.doulaGrid button:hover {
+  box-shadow: 2px 2px 5px rgb(161, 81, 0);
+}
+
+/* termina inicio */
+
+/* empieza contacto */
+
+.contactoPage {
+  margin: 0 auto;
+  width: 50%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.contacto {
+  margin: 9.5rem 4.1rem 1.5rem 4.1rem;
+  text-align: center;
+  color: rgb(238, 124, 7);
+  padding: 2rem 0rem 0.5rem 0rem;
+}
+
+.contacto h1 {
+  margin: 15px 0px;
+  font-size: 1.7rem;
+}
+
+.contacto p {
+  font-size: 1.3rem;
+}
+
+form {
+  margin: 10px 3.1rem 3.1rem 3.1rem;
+  text-align: left;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+fieldset {
+  border: 0px;
+  padding-bottom: 3rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+form legend {
+  display: none;
+}
+
+input[type="submit"] {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px;
+  background-color: rgb(238, 124, 7);
+  color: white;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 2px 2px 5px rgba(161, 81, 0, 0.4);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: rgb(238, 124, 7);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 0.4rem 0.8rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #a35700;
+  border-radius: 0.4rem;
+}
+
+/* termina contacto */
+
+/* empieza servicios */
+
+.serviciosGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "serviciosTitle serviciosTitle serviciosTitle" "one two three";
+  height: 100vh;
+  padding: 0 5rem;
+  margin-bottom: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  gap: 2rem;
+  margin: 0px auto;
+}
+
+.serviciosGrid .serviciosTitle {
+  grid-area: serviciosTitle;
+}
+
+.serviciosGrid .one {
+  grid-area: one;
+}
+
+.serviciosGrid .two {
+  grid-area: two;
+}
+
+.serviciosGrid .three {
+  grid-area: three;
+}
+
+.serviciosGrid h1 {
+  margin-top: 7rem;
+
+  font-size: 2.8rem;
+  color: white;
+}
+
+.serviciosCard a {
+  text-decoration: none;
+  color: rgb(238, 124, 7);
+  font-size: 1.2rem;
+}
+
+.serviciosCard h3 {
+  margin: 10px 0px;
+  padding: 0px 20px;
+  font-size: 1.7rem;
+}
+
+.serviciosCard img {
+  width: 35%;
+  margin: 10px;
+}
+
+.serviciosCard {
+  width: 95%;
+  height: 75%;
+  background-color: rgba(250, 250, 250, 1);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+  transform: scale(1);
+  margin-bottom: 8rem;
+}
+
+.serviciosCard:hover {
+  box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+.serviciosCard .buttonServicios {
+  margin-top: 15px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0px;
+  background-color: rgb(238, 124, 7);
+  color: white;
+  width: 60%;
+
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.serviciosCard .buttonServicios:hover {
+  width: 70%;
+  padding-right: 33px;
+  padding-left: 8px;
+}
+
+.serviciosCard .buttonServicios::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(./imagenes/arrow_icon.png);
+  background-size: cover;
+  background-repeat: no repeat;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 12px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.serviciosCard .buttonServicios:hover:after {
+  opacity: 1;
+  right: 16px;
+}
+
+.seguridadGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas:
+    "seguridadTitle seguridadTitle"
+    "seguridadText1 seguridadImg1"
+    "seguridadImg2 seguridadText2";
+
+  justify-items: center;
+  align-items: center;
+
+  margin: 0px auto;
+  background: rgb(78, 172, 49);
+  background: linear-gradient(
+    145deg,
+    rgba(78, 172, 49, 1) 3%,
+    rgba(31, 155, 55, 1) 98%
+  );
+  padding: 3rem 8rem;
+  row-gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.seguridadGrid .seguridadTitle {
+  grid-area: seguridadTitle;
+}
+
+.seguridadGrid .seguridadText1 {
+  grid-area: seguridadText1;
+}
+
+.seguridadGrid.seguridadImg1 {
+  grid-area: seguridadImg1;
+}
+
+.seguridadGrid .seguridadImg2 {
+  grid-area: seguridadImg2;
+}
+
+.seguridadGrid .seguridadText2 {
+  grid-area: seguridadText2;
+}
+
+.socioGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas:
+    "socioTitle socioTitle"
+    "socioText1 socioImg1"
+    "socioImg2 socioText2";
+  justify-items: center;
+  align-items: center;
+  margin: 0px auto;
+  padding: 3rem 8rem;
+  row-gap: 4rem;
+  margin-top: 2.5rem;
+}
+
+.socioGrid .socioTitle {
+  grid-area: socioTitle;
+}
+
+.socioGrid .socioText1 {
+  grid-area: socioText1;
+}
+
+.socioGrid .socioImg1 {
+  grid-area: socioImg1;
+}
+
+.socioGrid .socioImg2 {
+  grid-area: socioImg2;
+}
+
+.socioGrid .socioText2 {
+  grid-area: socioText2;
+}
+
+.climaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 2fr 1fr;
+  grid-template-areas:
+    "climaTitle climaTitle"
+    "climaText1 climaImg1"
+    "climaImg2 climaText2"
+    "climaText3 climaText3";
+
+  justify-items: center;
+  align-items: center;
+
+  margin: 0px auto;
+  background: rgb(78, 172, 49);
+  background: linear-gradient(
+    145deg,
+    rgba(78, 172, 49, 1) 3%,
+    rgba(31, 155, 55, 1) 98%
+  );
+  padding: 2rem 8rem;
+  row-gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.climaGrid .climaTitle {
+  grid-area: climaTitle;
+  margin-top: 4rem;
+}
+
+.climaGrid .climaText1 {
+  grid-area: climaText1;
+}
+
+.climaGrid .climaImg1 {
+  grid-area: climaImg1;
+}
+
+.climaGrid .climaImg2 {
+  grid-area: climaImg2;
+}
+
+.climaGrid .climaText2 {
+  grid-area: climaText2;
+}
+
+.climaGrid .climaText3 {
+  grid-area: climaText3;
+  width: 75%;
+}
+
+.servicioItem {
+  width: 100%;
+
+  color: white;
+}
+
+.servicioItem p {
+  margin: 1.25rem 0px;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.servicioItem ul {
+  font-size: 1.2rem;
+  margin: 20px 0px;
+  text-align: left;
+  margin-left: 6rem;
+}
+
+.servicioItem h3 {
+  font-size: 1.5rem;
+}
+
+.servicioItem img {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+/* termina servicios */
+
+/* empieza nosotros */
+
+.nosotrosPage h1 {
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+}
+
+.nosotrosPage {
+  margin: 0 auto;
+  padding: 7rem 5rem 5rem 5rem;
+  width: 80%;
+  color: white;
+}
+
+.nosotrosPage p {
+  margin: 20px 0px;
+  line-height: 2.5rem;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.nosotrosPage h2 {
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nosotrosPage img {
+  margin: 2rem 0px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.doula2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "doulaText doulaImg";
+  justify-items: center;
+  align-items: center;
+  margin: 0px auto;
+  height: 100%;
+}
+
+.doula2 .doulaText {
+  grid-area: doulaText;
+}
+
+.doula2 .doulaImg {
+  grid-area: doulaImg;
+  width: 70%;
+}
+
+/* termina nosotros */
+
+/* empieza footer */
+
+footer {
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "first last" "copyright copyright";
+
+  bottom: 0;
+  width: 100%;
+  background: rgb(44, 44, 44);
+  padding: 25px 0px 15px 0px;
+  font-size: 1.3rem;
+  color: white;
+  justify-items: center;
+  align-items: center;
+}
+
+footer .first {
+  grid-area: first;
+}
+
+footer .last {
+  grid-area: last;
+}
+
+footer .copyright {
+  grid-area: copyright;
+  font-size: 1rem;
+}
+
+.footerDiv {
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* termina footer */
+
+/* empieza responsive tablet */
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 2rem;
+  }
+
+  .section1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title" "titleImg";
+    align-items: center;
+    justify-items: center;
+    color: white;
+  }
+
+  .section1 .title {
+    text-align: center;
+    padding: 0 3rem;
+  }
+
+  .section1 h1 {
+    font-size: 4.2rem;
+  }
+
+  .section1 img {
+    width: 60%;
+    padding-bottom: 6rem;
+  }
+
+  .section2 .servicio {
+    width: 92%;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .section2 .servicioGrid {
+    width: 100%;
+  }
+
+  .servicio .buttonServicio {
+    width: 68%;
+  }
+
+  .servicio .buttonServicio:hover {
+    width: 80%;
+  }
+
+  .servicio .buttonServicio:hover:after {
+    right: 14px;
+  }
+
+  .servicio h3 {
+    font-size: 1.3rem;
+  }
+
+  .doulaGrid {
+    margin: 0px auto;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: "doula" "doulaImg";
+  }
+
+  .section3 {
+    margin-bottom: 34rem;
+  }
+
+  .contactoPage {
+    width: 70%;
+  }
+
+  .contacto h1 {
+    line-height: 2.5rem;
+  }
+
+  .nosotrosPage {
+    padding: 7rem 2rem 5rem 2rem;
+    width: 85%;
+  }
+
+  .nosotrosPage img {
+    width: 70%;
+  }
+
+  .doula2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "doulaText" "doulaImg";
+  }
+
+  .serviciosCard {
+    width: 95%;
+
+    padding: 1.2rem 0.8rem;
+  }
+
+  .serviciosGrid {
+    height: 65vh;
+    padding: 0 2rem;
+
+    width: 100%;
+  }
+
+  .serviciosCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .serviciosCard .buttonServicios {
+    width: 68%;
+  }
+
+  .serviciosCard .buttonServicios:hover {
+    width: 80%;
+  }
+
+  .serviciosCard .buttonServicios:hover:after {
+    right: 14px;
+  }
+
+  .seguridadGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    padding: 3rem 3rem;
+    row-gap: 1.3rem;
+    margin-top: 2.5rem;
+  }
+
+  .seguridadGrid h2 {
+    padding-top: 2rem;
+  }
+
+  .socioGrid {
+    padding: 3rem 3rem;
+    row-gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .climaGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr;
+    grid-template-areas:
+      "climaTitle climaTitle"
+      "climaText1 climaImg1"
+      "climaText2 climaText2"
+      "climaImg2 climaImg2"
+      "climaText3 climaText3";
+    padding: 3rem 3rem;
+    row-gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .climaGrid .climaText3 {
+    width: 100%;
+  }
+
+  .servicioItem img {
+    width: 80%;
+  }
+}
+
+/* termina responsive tablet */
+
+/* empieza responsive celular */
+
+@media screen and (max-width: 480px) {
+  .menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo" "navlinks";
+
+    align-items: center;
+    justify-items: center;
+    padding: 8px 35px;
+  }
+
+  .menu li {
+    padding: 0.2rem;
+  }
+  .menu a {
+    font-size: 1rem;
+  }
+
+  .menu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  main {
+    margin-top: 6rem;
+  }
+
+  .section1 h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .section1 h2 {
+    font-size: 1.8rem;
+  }
+
+  .section1 img {
+    width: 60%;
+    padding-bottom: 6rem;
+  }
+
+  .section2 .servicioGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "uno" "dos" "tres";
+    gap: 2rem;
+    width: 70%;
+  }
+
+  .section2 {
+    padding: 3rem 4rem;
+    height: 80rem;
+  }
+
+  .section2 h2 {
+    line-height: 3.5rem;
+  }
+
+  .servicio .buttonServicio {
+    width: 75%;
+  }
+
+  .servicio .buttonServicio:hover {
+    width: 90%;
+  }
+
+  .section3 {
+    height: 56rem;
+    margin-bottom: 22rem;
+    padding: 0px 2rem;
+    padding-top: 3rem;
+    color: white;
+  }
+
+  .section3 h2 {
+    font-size: 2.3rem;
+  }
+
+  .doulaGrid {
+    justify-content: center;
+    padding: 0 2rem;
+    height: 25rem;
+  }
+
+  .doula p {
+    margin: 2rem;
+  }
+
+  .doulaGrid h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .doulaGrid img {
+    width: 22rem;
+  }
+
+  .doulaGrid .doula {
+    margin-bottom: 3rem;
+  }
+
+  .contactoPage {
+    width: 85%;
+  }
+
+  .contacto {
+    margin: 9.5rem 2.8rem 1.5rem 2.8rem;
+  }
+
+  .contacto h1 {
+    font-size: 1.7rem;
+  }
+
+  .contacto p {
+    font-size: 1.2rem;
+  }
+
+  form {
+    margin: 10px 2rem 3.1rem 2rem;
+    text-align: left;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .nosotrosPage {
+    padding: 7rem 1.5rem 5rem 1.5rem;
+    width: 90%;
+  }
+
+  .nosotrosPage h1 {
+    line-height: 3.9rem;
+  }
+
+  .nosotrosPage img {
+    width: 100%;
+  }
+
+  .doula2 .doulaImg {
+    width: 100%;
+  }
+
+  .doula2 {
+    height: 53rem;
+  }
+
+  .serviciosGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "serviciosTitle" "one" "two" "three";
+    height: 80rem;
+    padding: 0 2rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .serviciosCard {
+    width: 73%;
+    height: 95%;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .serviciosGrid h1 {
+    margin-top: 3rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .seguridadGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 2fr 1fr;
+    grid-template-areas:
+      "seguridadTitle"
+      "seguridadText1"
+      "seguridadImg1"
+      "seguridadText2"
+      "seguridadImg2";
+
+    padding: 2.5rem 2rem;
+    row-gap: 0.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .seguridadGrid .seguridadTitle {
+    padding-top: 6rem;
+  }
+
+  .seguridadGrid h2 {
+    height: 12rem;
+  }
+
+  .servicioItem ul {
+    margin-bottom: 10px;
+  }
+
+  .socioGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "socioTitle"
+      "socioText1"
+      "socioImg1"
+      "socioText2"
+      "socioImg2";
+
+    padding: 2.5rem 2rem;
+    row-gap: 0.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .socioGrid .socioTitle {
+    margin-top: 5rem;
+  }
+
+  .climaGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr 1fr;
+    grid-template-areas:
+      "climaTitle"
+      "climaText1"
+      "climaImg1"
+      "climaText2"
+      "climaImg2"
+      "climaText3";
+
+    padding: 2.5rem 1.5rem;
+    row-gap: 0.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .climaGrid .climaTitle {
+    margin-top: 5rem;
+  }
+
+  .servicioItem img {
+    width: 85%;
+  }
+
+  .climaGrid .climaText3 {
+    width: 100%;
+  }
+
+  footer {
+    padding: 25px 20px 15px 20px;
+  }
+}
+
+/* termina responsive celular */
