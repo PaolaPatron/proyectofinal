@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Open+Sans:wght@700&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Capas Consulting</title>
 </head>
@@ -29,16 +30,16 @@
         <!--contenido principal-->
         <main class="contenido">
             <section class="section1">
-                <div class="title">
-                    <h1>CapAS Consulting</h1>
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="title">
+                    <h1 >CapAS Consulting</h1>
                     <p>Somos tu mejor alternativa de Gestión Social</p>
                     <a href="./pages/contacto.html" target="_parent"><button>Contáctanos</button></a>
                 </div>
-                <img class="titleImg" src="./imagenes/capas_img2.png" alt="Capas Consulting" width="250px">
+                <img class="titleImg" src="./imagenes/capas_img2.png" alt="Capas Consulting" width="250px" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
             </section>
             <section class="section2">
-                <h2>Nuestros Servicios</h2>
-                <div class="servicioGrid">
+                <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Nuestros Servicios</h2>
+                <div data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000" class="servicioGrid">
                     <div class="servicio uno">
                         <a href="./pages/servicios.html#servicio1"><h3>Seguridad Social</h3><img src="./imagenes/seguridad_social.png" alt="Seguridad Social" width="250px"><p>Realizamos gestiones médicas y sociales</p><button class="buttonServicio"><h4>Ver Servicio</h4></button></a>
                     </div>
@@ -52,14 +53,14 @@
                 
             </section>
             <section class="section3">
-                <h2>¿Por qué nosotros?</h2>
+                <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">¿Por qué nosotros?</h2>
                 <div class="doulaGrid">
-                    <div class="doula">
+                    <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" class="doula">
                         <h3>DOULA</h3>
                         <p>En CapAS Consulting, seguimos la metodología DOULA, la cual nos distingue de otras consultorías. A través de la aplicación de esta metodología realizamos acompañamiento y asesoramiento profesional personalizado en todos los servicios que ofrecemos, lo cual facilita la identificación y satisfacción de nuestros clientes.</p>
                         <a href="./pages/nosotros.html#porque" target="_parent"><button>Conoce más</button></a>
                     </div>
-                    <img src="./imagenes/tecnica_dula.jpg" alt="" width="250px" class="doulaImg">
+                    <img data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000" src="./imagenes/tecnica_dula.jpg" alt="" width="250px" class="doulaImg">
                 </div>
             </section>
         </main>
@@ -84,5 +85,9 @@
         </footer>
         <!--fin footer-->
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
