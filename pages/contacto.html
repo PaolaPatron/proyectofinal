@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Open+Sans:wght@700&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
@@ -26,7 +27,7 @@
     </header>
     <!--fin navegacion-->
     <!--contenido principal-->  
-    <main class="contactoPage">
+    <main class="contactoPage" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
         <section class="contacto">
             <h1>¿Estás interesado en nuestros Servicios?</h1>
             <p>Escríbenos y nos comunicaremos contigo a la brevedad posible.</p>
@@ -86,5 +87,9 @@
         <p class="copyright">Capas Consulting © 2022. Todos los derechos reservados</p>
     </footer>
     <!--fin footer-->       
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
