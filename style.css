@@ -27,7 +27,6 @@ body {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas: "logo navlinks";
-
   position: fixed;
   top: 0;
   left: 0;
@@ -811,6 +810,10 @@ footer a {
 /* empieza responsive tablet */
 
 @media screen and (max-width: 768px) {
+  .menu li {
+    padding: 0.5rem;
+  }
+
   main {
     margin-top: 2rem;
   }
@@ -877,7 +880,7 @@ footer a {
   }
 
   .containerContacto > .row {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 
   .contactoPage {
@@ -1083,10 +1086,6 @@ footer a {
 
   .containerContacto {
     padding-bottom: 5rem;
-  }
-
-  .containerContacto > .row {
-    margin-top: 7rem;
   }
 
   .containerContacto > .row img {
