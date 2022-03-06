@@ -814,6 +814,10 @@ footer a {
 /* empieza responsive tablet */
 
 @media screen and (max-width: 768px) {
+  .menu li {
+    padding: 0.5rem;
+  }
+
   main {
     margin-top: 2rem;
   }
