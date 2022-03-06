@@ -73,7 +73,7 @@ main {
 }
 
 h1 {
-  font-family: "Martel Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -85,7 +85,8 @@ p {
   font-family: "PT Sans Caption", sans-serif;
 }
 
-button {
+button,
+.btn {
   font-size: 1rem;
   padding: 10px;
   border-radius: 10px;
@@ -95,84 +96,56 @@ button {
 
 /* empieza inicio */
 
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2% 90% 8%;
-  grid-template-areas: "header" "contenido" "footer";
+.contenedorIndex {
   width: 100%;
-}
-
-.header {
-  grid-area: header;
-}
-
-.contenido {
-  grid-area: contenido;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 .section1 {
   height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "title titleImg";
   align-items: center;
   justify-items: center;
   color: white;
 }
 
 .section1 .title {
-  grid-area: title;
-  text-align: left;
   padding-left: 6.5rem;
-}
-
-.section1 .titleImg {
-  grid-area: titleImg;
 }
 
 .section1 h1 {
   font-size: 3.5rem;
   position: relative;
   bottom: 1.5rem;
+  text-align: left;
 }
 
 .section1 p {
   font-size: 2rem;
   position: relative;
-  bottom: 1.7rem;
+  bottom: 1rem;
+  text-align: left;
 }
 
 .section1 button {
   font-size: 1.7rem;
   position: relative;
+  right: 10rem;
   color: rgb(238, 124, 7);
   font-weight: bold;
+  background-color: white;
 }
 
 .section1 button:hover {
   box-shadow: 2px 2px 5px rgb(161, 81, 0);
+  background-color: rgba(31, 155, 55, 1);
 }
 
 .section1 img {
-  width: 75%;
-}
-
-.section1 h2 {
-  font-size: 2.5rem;
-  padding-bottom: 3.7rem;
+  width: 80%;
 }
 
 .section2 {
   padding: 3rem 4rem;
   height: 40rem;
-  width: 100%;
   background: rgb(78, 172, 49);
   background: linear-gradient(
     145deg,
@@ -184,7 +157,6 @@ button {
 
 .section2 h2 {
   margin-top: 2rem;
-  margin-bottom: 3rem;
 }
 
 .section2 .servicioGrid {
@@ -251,7 +223,6 @@ button {
   background-color: rgb(78, 172, 49);
   color: white;
   width: 60%;
-
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -285,7 +256,6 @@ button {
 
 .section3 {
   height: 30rem;
-  width: 100%;
   margin-bottom: 12rem;
   padding: 0px 9rem;
   padding-top: 3rem;
@@ -297,22 +267,10 @@ button {
   margin-bottom: 2.7rem;
 }
 
-.doulaGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+.doula {
   align-items: center;
   justify-items: center;
   margin: 0px auto;
-  grid-template-areas: "doula doulaImg";
-}
-
-.doulaGrid .doula {
-  grid-area: doula;
-}
-
-.doulaGrid .doulaImg {
-  grid-area: doulaImg;
 }
 
 .doula p {
@@ -322,23 +280,26 @@ button {
   margin-bottom: 1.2rem;
 }
 
-.doulaGrid h3 {
-  font-size: 1.5rem;
+.doula h3 {
+  font-size: 1.8rem;
   margin-bottom: 1.2rem;
 }
 
-.doulaGrid img {
-  width: 25rem;
+.section3 img {
+  width: 90%;
 }
 
-.doulaGrid button {
+.doula button {
   color: rgb(238, 124, 7);
+  background-color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.doulaGrid button:hover {
+.doula button:hover {
   box-shadow: 2px 2px 5px rgb(161, 81, 0);
+  background-color: rgba(31, 155, 55, 1);
 }
 
 /* termina inicio */
@@ -765,7 +726,6 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
   grid-template-areas: "first last" "copyright copyright";
-
   bottom: 0;
   width: 100%;
   background: rgb(44, 44, 44);
@@ -819,12 +779,7 @@ footer a {
   }
 
   .section1 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "title" "titleImg";
-    align-items: center;
-    justify-items: center;
-    color: white;
+    padding-top: 12rem;
   }
 
   .section1 .title {
@@ -834,11 +789,23 @@ footer a {
 
   .section1 h1 {
     font-size: 4.2rem;
+    text-align: center;
   }
 
   .section1 img {
     width: 60%;
-    padding-bottom: 6rem;
+    padding-bottom: 1rem;
+  }
+
+  .section1 p {
+    text-align: center;
+    padding: 1rem 2rem 0.5rem 2rem;
+    bottom: 2rem;
+  }
+
+  .section1 button {
+    right: 0;
+    bottom: 2rem;
   }
 
   .section2 .servicio {
@@ -851,7 +818,7 @@ footer a {
   }
 
   .servicio .buttonServicio {
-    width: 68%;
+    width: 75%;
   }
 
   .servicio .buttonServicio:hover {
@@ -866,17 +833,20 @@ footer a {
     font-size: 1.3rem;
   }
 
-  .doulaGrid {
-    margin: 0px auto;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-template-areas: "doula" "doulaImg";
+  .servicio .buttonServicio {
+    font-size: 0.9rem;
   }
 
   .section3 {
     margin-bottom: 34rem;
+    padding: 0px 6rem;
+    padding-top: 4rem;
+  }
+
+  .section3 img {
+    width: 80%;
+    padding-top: 3rem;
+    margin-top: 2rem;
   }
 
   .containerContacto > .row {
@@ -1009,36 +979,51 @@ footer a {
     margin-top: 6rem;
   }
 
+  .section1 {
+    padding-top: 14rem;
+    margin-bottom: 2.4rem;
+  }
+
   .section1 h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 4rem;
     margin-bottom: 1rem;
   }
 
-  .section1 h2 {
-    font-size: 1.8rem;
+  .section1 p {
+    font-size: 1.4rem;
+    bottom: 3rem;
+    padding: 2rem 0 0.5rem 0;
   }
 
-  .section1 img {
-    width: 60%;
-    padding-bottom: 6rem;
+  .section1 button {
+    bottom: 3rem;
   }
 
   .section2 .servicioGrid {
+    margin: 0px auto;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "uno" "dos" "tres";
-    gap: 2rem;
-    width: 70%;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .section2 .servicio {
+    width: 92%;
+    margin-bottom: 2rem;
   }
 
   .section2 {
     padding: 3rem 4rem;
-    height: 80rem;
+    height: 86rem;
+    margin-bottom: 3rem;
   }
 
   .section2 h2 {
     line-height: 3.5rem;
+    padding-bottom: 2rem;
   }
 
   .servicio .buttonServicio {
@@ -1050,9 +1035,9 @@ footer a {
   }
 
   .section3 {
-    height: 56rem;
+    height: 50rem;
     margin-bottom: 22rem;
-    padding: 0px 2rem;
+    padding: 0px 1rem;
     padding-top: 3rem;
     color: white;
   }
@@ -1061,27 +1046,22 @@ footer a {
     font-size: 2.3rem;
   }
 
-  .doulaGrid {
+  .doula {
     justify-content: center;
-    padding: 0 2rem;
-    height: 25rem;
+    padding: 0;
   }
 
   .doula p {
     margin: 2rem;
   }
 
-  .doulaGrid h3 {
+  .doula h3 {
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
   }
 
-  .doulaGrid img {
-    width: 22rem;
-  }
-
-  .doulaGrid .doula {
-    margin-bottom: 3rem;
+  .section3 img {
+    width: 90%;
   }
 
   .containerContacto {
@@ -1098,7 +1078,7 @@ footer a {
   }
 
   .contactoPage h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
   }
 
@@ -1231,6 +1211,11 @@ footer a {
 
   footer {
     padding: 25px 20px 15px 20px;
+    font-size: 1.2rem;
+  }
+
+  footer a {
+    font-size: 1.2rem;
   }
 }
 
