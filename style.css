@@ -74,7 +74,7 @@ main {
 }
 
 h1 {
-  font-family: "Martel Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -102,6 +102,7 @@ button {
   grid-template-rows: 2% 90% 8%;
   grid-template-areas: "header" "contenido" "footer";
   width: 100%;
+  justify-content: center;
 }
 
 .header {
@@ -1093,15 +1094,15 @@ footer a {
   }
 
   .contacto h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .contacto p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   form {
-    margin: 10px 2rem 3.1rem 2rem;
+    margin: 10px 1rem 3.1rem 1rem;
     text-align: left;
   }
 
