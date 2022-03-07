@@ -65,6 +65,10 @@ body {
   justify-self: end;
 }
 
+.menu ul {
+  margin-bottom: 0;
+}
+
 main {
   position: relative;
   width: 100%;
@@ -667,19 +671,18 @@ label {
 
 .nosotrosPage h1 {
   padding-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 2.8rem;
 }
 
 .nosotrosPage {
   margin: 0 auto;
-  padding: 7rem 5rem 5rem 5rem;
-  width: 80%;
   color: white;
 }
 
 .nosotrosPage p {
   margin: 20px 0px;
+  padding-left: 2rem;
   line-height: 2.5rem;
   text-align: justify;
   font-size: 1.5rem;
@@ -692,28 +695,12 @@ label {
 
 .nosotrosPage img {
   margin: 2rem 0px;
-  width: 50%;
+  width: 90%;
   border-radius: 10px;
 }
 
-.doula2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "doulaText doulaImg";
-  justify-items: center;
-  align-items: center;
-  margin: 0px auto;
-  height: 100%;
-}
-
-.doula2 .doulaText {
-  grid-area: doulaText;
-}
-
-.doula2 .doulaImg {
-  grid-area: doulaImg;
-  width: 70%;
+.porque {
+  padding-bottom: 5rem;
 }
 
 /* termina nosotros */
@@ -862,18 +849,23 @@ footer a {
   }
 
   .nosotrosPage {
-    padding: 7rem 2rem 5rem 2rem;
-    width: 85%;
+    padding-top: 7rem 2rem 5rem 2rem;
   }
 
   .nosotrosPage img {
     width: 70%;
   }
 
-  .doula2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "doulaText" "doulaImg";
+  .nosotrosPage h1 {
+    padding-top: 10rem;
+  }
+
+  .nosotrosPage p {
+    padding-left: 0;
+  }
+
+  .porque {
+    padding-bottom: 2rem;
   }
 
   .serviciosCard {
@@ -1098,18 +1090,16 @@ footer a {
 
   .nosotrosPage h1 {
     line-height: 3.9rem;
+    padding-top: 1rem;
   }
 
   .nosotrosPage img {
     width: 100%;
   }
 
-  .doula2 .doulaImg {
-    width: 100%;
-  }
-
-  .doula2 {
-    height: 53rem;
+  .porque {
+    margin-top: 2rem;
+    padding-bottom: 0;
   }
 
   .serviciosGrid {
