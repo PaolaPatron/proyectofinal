@@ -48,6 +48,11 @@ body {
   display: inline-block;
   color: rgb(238, 124, 7);
   font-size: 1.2rem;
+  transition: color;
+}
+
+.menu a:hover {
+  color: rgba(31, 155, 55, 1);
 }
 
 .menu img {
@@ -390,23 +395,28 @@ label {
 
 /* empieza servicios */
 
-.serviciosGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
-  grid-template-areas: "serviciosTitle serviciosTitle serviciosTitle" "one two three";
+.serviciosPage {
   height: 100vh;
   padding: 0 5rem;
   margin-bottom: 2.5rem;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  width: 80%;
-  gap: 2rem;
   margin: 0px auto;
 }
 
-.serviciosGrid .serviciosTitle {
-  grid-area: serviciosTitle;
+.serviciosTitle {
+  margin-bottom: 4rem;
+}
+
+.serviciosGrid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "one two three";
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 .serviciosGrid .one {
@@ -421,9 +431,8 @@ label {
   grid-area: three;
 }
 
-.serviciosGrid h1 {
+.serviciosPage h1 {
   margin-top: 7rem;
-
   font-size: 2.8rem;
   color: white;
 }
@@ -446,7 +455,7 @@ label {
 }
 
 .serviciosCard {
-  width: 95%;
+  width: 100%;
   height: 75%;
   background-color: rgba(250, 250, 250, 1);
   padding: 2rem 1rem;
@@ -868,17 +877,27 @@ footer a {
     padding-bottom: 2rem;
   }
 
-  .serviciosCard {
-    width: 95%;
-
-    padding: 1.2rem 0.8rem;
+  .serviciosPage h1 {
+    margin-top: 9rem;
+    font-size: 2.8rem;
+    color: white;
+  }
+  .serviciosTitle {
+    margin-bottom: 3rem;
+  }
+  .serviciosGrid {
+    gap: 0.2rem;
   }
 
-  .serviciosGrid {
-    height: 65vh;
-    padding: 0 2rem;
-
+  .serviciosPage {
+    height: 75vh;
+    padding: 0 1rem;
     width: 100%;
+  }
+
+  .serviciosCard {
+    width: 95%;
+    padding: 1.5rem 0.7rem;
   }
 
   .serviciosCard h3 {
@@ -937,6 +956,15 @@ footer a {
 
   .servicioItem img {
     width: 80%;
+  }
+
+  .servicioItem ul {
+    margin: 1rem 0px 1rem 0px;
+    margin-left: 1rem;
+  }
+
+  .servicioItem h3 {
+    margin-top: 2rem;
   }
 }
 
@@ -1102,25 +1130,28 @@ footer a {
     padding-bottom: 0;
   }
 
+  .serviciosPage {
+    height: 90rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
   .serviciosGrid {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "serviciosTitle" "one" "two" "three";
-    height: 80rem;
-    padding: 0 2rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "one" "two" "three";
     gap: 2rem;
-    margin-bottom: 5rem;
   }
 
   .serviciosCard {
-    width: 73%;
-    height: 95%;
+    margin: 0 auto;
+    width: 75%;
+    height: 100%;
     padding: 1rem 1rem;
-    margin-bottom: 1rem;
   }
 
-  .serviciosGrid h1 {
-    margin-top: 3rem;
+  .serviciosPage h1 {
+    margin-top: 6rem;
     line-height: 4rem;
     margin-bottom: 0.5rem;
   }

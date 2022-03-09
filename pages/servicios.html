@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imagenes/favicon.png">
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Open+Sans:wght@700&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <title>Servicios</title>
 </head>
@@ -27,14 +29,27 @@
     <!--fin navegacion-->
     <!--contenido principal-->
     <main>
-        <section class="serviciosGrid">
-            <h1 class="serviciosTitle">Nuestros Servicios</h1>
-            
-                <div class="serviciosCard one"><a href="#servicio1"><h3>Seguridad Social</h3><img src="../imagenes/seguridad_social2.png" alt="Seguridad Social" width="250px"><p>Realizamos gestiones médicas y sociales</p><button class="buttonServicios"><h4>Ver Servicio</h4></button></a></div>
-                <div class="serviciosCard two"><a href="#servicio2"><h3>Formación Socio Laboral</h3><img src="../imagenes/formacion_socio_laboral2.png" alt="Formación Socio Laboral" width="250px"><p>Gestión de vida profesional y personal</p><button class="buttonServicios"><h4>Ver Servicio</h4></button></a></div>
-                <div class="serviciosCard three"> <a href="#servicio3"><h3>Clima Organizacional</h3><img src="../imagenes/clima_organizacional_icon2.png" alt="Clima Organizacional" width="250px"><p>Ayudamos a mejorar el ambiente de trabajo</p><button class="buttonServicios"><h4>Ver Servicio</h4></button></a></div>
-            
-        </section> 
+        <div class="container serviciosPage">
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <h1 class="serviciosTitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Nuestros Servicios</h1>
+                </div>
+                <div class="col-sm-12 justify-content-center align-items-center ">
+                    <div data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000" class="serviciosGrid justify-content-center align-items-center">
+                        <div class="serviciosCard one">
+                            <a href="#servicio1"><h3>Seguridad Social</h3><img src="../imagenes/seguridad_social2.png" alt="Seguridad Social" width="250px"><p>Realizamos gestiones médicas y sociales</p><button type="button" class="btn btn-primary buttonServicios">Ver Servicio</button></a>
+                        </div>
+                        <div class="serviciosCard two">
+                            <a href="#servicio2"><h3>Formación Socio Laboral</h3><img src="../imagenes/formacion_socio_laboral2.png" alt="Formación Socio Laboral" width="250px"><p>Gestión de vida profesional y personal</p><button type="button" class="btn btn-primary buttonServicios">Ver Servicio</button></a>
+                        </div>
+                        <div class="serviciosCard three">
+                            <a href="#servicio3"><h3>Clima Organizacional</h3><img src="../imagenes/clima_organizacional_icon2.png" width="250px"><p>Ayudamos a mejorar el ambiente de trabajo</p><button type="button" class="btn btn-primary buttonServicios">Ver Servicio</button></a>
+                        </div>
+                    </div>      
+                </div>  
+            </div>
+
+        </div>
         <section class="servicioItem seguridadGrid" id="servicio1">
             <h2 class="seguridadTitle">Seguridad Social</h2>   
             <div class="seguridadText1">
@@ -113,7 +128,7 @@
                 <h3>Clima Laboral</h3>
                 <p>Nos enfocamos básicamente en la Conciliación Laboral. Para que un ambiente laboral positivo sea posible, debe existir cierto equilibrio entre la vida personal y laboral de los trabajadores. Los empleados se sienten más seguros de sí mismos y de su desempeño cuando pueden satisfacer otras necesidades de su vida: la familia, los amigos, el autodesarrollo.</p>
             </div>
-        </section> 
+        </section>
         
     </main>
     <!--fin contenido principal-->  
@@ -135,6 +150,11 @@
         </div>
         <p class="copyright">Capas Consulting © 2022. Todos los derechos reservados</p>
     </footer>
-    <!--fin footer-->   
+    <!--fin footer-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>     
 </body>
 </html>
