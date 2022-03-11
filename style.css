@@ -891,12 +891,17 @@ footer a {
     margin-top: 2rem;
   }
 
+  .containerContacto {
+    background-position: 10% 100%;
+  }
+
   .containerContacto > .row {
     margin-top: 7rem;
   }
 
   .contactoPage {
-    width: 90%;
+    width: 80%;
+    padding: 2.5rem 0rem 2rem 0rem;
   }
 
   .containerContacto > .row img {
@@ -904,23 +909,48 @@ footer a {
   }
 
   .nosotrosPage {
-    padding: 7rem 2rem 5rem 2rem;
+    margin-top: 4rem;
   }
 
-  .nosotrosPage img {
+  .nosotrosUno {
+    background-position: 3% 100%;
+    padding: 0 4rem;
+  }
+
+  .nosotrosUno img {
     width: 70%;
   }
 
-  .nosotrosPage h1 {
+  .nosotrosUno h1 {
+    margin-top: 2.5rem;
+  }
+
+  .nosotrosUno p {
+    padding: 1rem 2rem;
+    margin: 1rem 0px;
+  }
+
+  .nosotrosUno p:first-child {
+    padding-top: 4rem;
+  }
+
+  .nosotrosDos img {
+    width: 45%;
+  }
+
+  .nosotrosDos p {
+    margin: 2rem 4rem;
+  }
+
+  .nosotrosDos {
+    padding-bottom: 0;
     padding-top: 10rem;
+    background-position: left top;
+    margin-top: -5rem;
   }
 
-  .nosotrosPage p {
-    padding-left: 0;
-  }
-
-  .porque {
-    padding-bottom: 2rem;
+  .nosotrosDos h1 {
+    padding-bottom: 5rem;
   }
 
   .serviciosPage h1 {
@@ -1112,6 +1142,10 @@ footer a {
     width: 90%;
   }
 
+  .containerContacto > .row {
+    margin-top: 2rem;
+  }
+
   .containerContacto {
     padding-bottom: 5rem;
   }
@@ -1122,7 +1156,7 @@ footer a {
 
   .contactoPage {
     width: 88%;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .contactoPage h1 {
@@ -1139,23 +1173,34 @@ footer a {
     text-align: justify;
   }
 
-  .nosotrosPage {
-    padding: 7rem 1.5rem 5rem 1.5rem;
-    width: 90%;
+  .nosotrosUno {
+    background-position: 20% 100%;
+    padding: 0 1.5rem;
   }
-
-  .nosotrosPage h1 {
+  .nosotrosUno h1 {
     line-height: 3.9rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 
-  .nosotrosPage img {
+  .nosotrosUno img {
     width: 100%;
+    margin-bottom: 10rem;
   }
 
-  .porque {
-    margin-top: 2rem;
+  .nosotrosUno p {
+    padding: 0;
+    margin: 1rem 0px;
+  }
+
+  .nosotrosDos {
     padding-bottom: 0;
+    padding-top: 3rem;
+    background-position: left top;
+    margin-top: -5rem;
+  }
+
+  .nosotrosDos p {
+    margin: 2rem 1rem;
   }
 
   .serviciosPage {
