@@ -730,6 +730,14 @@ label {
 .nosotrosPage {
   margin: 0 auto;
   color: white;
+  width: 100%;
+}
+
+.nosotrosUno {
+  background-image: url(./imagenes/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nosotrosPage p {
