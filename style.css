@@ -15,64 +15,37 @@ body {
   font-family: "PT Sans Caption", sans-serif;
 }
 
-.menu {
-  list-style-type: none;
-  background: rgb(231, 231, 231);
-  background: linear-gradient(
-    145deg,
-    rgba(231, 231, 231, 1) 3%,
-    rgba(250, 250, 250, 1) 98%
-  );
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "logo navlinks";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  align-items: center;
-  justify-items: start;
-  padding: 8px 35px;
+.nav-item {
   font-family: "Open Sans", sans-serif;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.menu li {
-  display: inline-block;
-  text-align: center;
-  padding: 1rem;
+.navbar {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+  font-family: "Open Sans", sans-serif;
 }
-.menu a {
-  text-decoration: none;
-  display: inline-block;
-  color: rgb(238, 124, 7);
+
+.nav-item {
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.nav-link {
+  color: rgb(238, 124, 7) !important;
   font-size: 1.2rem;
   transition: color;
 }
 
-.menu a:hover {
-  color: rgba(31, 155, 55, 1);
+.nav-link:hover {
+  color: rgba(31, 155, 55, 1) !important;
 }
 
-.menu img {
-  width: 70px;
-  height: 70px;
-  margin-left: 1.2rem;
+.btn-navbar {
+  color: white;
+  background-color: rgb(238, 124, 7);
 }
 
-.menu .logo {
-  grid-area: logo;
-}
-
-.menu .navlinks {
-  grid-area: navlinks;
-  justify-self: end;
-}
-
-.menu ul {
-  margin-bottom: 0;
+.btn-navbar:hover {
+  background-color: rgba(31, 155, 55, 1);
 }
 
 main {
@@ -843,10 +816,6 @@ footer a {
 /* empieza responsive tablet */
 
 @media screen and (max-width: 768px) {
-  .menu li {
-    padding: 0.5rem;
-  }
-
   main {
     margin-top: 2rem;
   }
@@ -1050,26 +1019,8 @@ footer a {
 /* empieza responsive celular */
 
 @media screen and (max-width: 480px) {
-  .menu {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo" "navlinks";
-
-    align-items: center;
-    justify-items: center;
-    padding: 8px 35px;
-  }
-
-  .menu li {
-    padding: 0.2rem;
-  }
-  .menu a {
-    font-size: 1rem;
-  }
-
-  .menu img {
-    width: 50px;
-    height: 50px;
+  .nav-item {
+    padding-right: 0;
   }
 
   main {
