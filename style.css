@@ -251,13 +251,13 @@ button,
   position: absolute;
   opacity: 0;
   top: 22px;
-  right: -40px;
+  right: -10px;
   transition: 0.5s;
 }
 
 .servicio .buttonServicio:hover:after {
   opacity: 1;
-  right: 55px;
+  right: 45px;
 }
 
 .section3 {
@@ -768,7 +768,7 @@ footer a {
 
   .servicio .buttonServicio:hover:after {
     right: 35px;
-    top: 12px;
+    top: 16px;
   }
 
   .servicio h3 {
@@ -776,7 +776,7 @@ footer a {
   }
 
   .servicio .buttonServicio {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .section3 {
