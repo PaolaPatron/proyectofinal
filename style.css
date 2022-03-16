@@ -409,12 +409,23 @@ label {
   align-items: center;
   justify-items: center;
   color: white;
-  background-image: url(./imagenes/capas1.jpg);
+  text-align: left;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 4px 4px 0px #00000040, inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-  text-align: left;
+}
+
+.TitleOne {
+  background-image: url(./imagenes/capas1.jpg);
+}
+
+.TitleTwo {
+  background-image: url(./imagenes/servicio2.jpg);
+}
+
+.TitleThree {
+  background-image: url(./imagenes/servicio3.jpg);
 }
 
 .TitleServicio h1 {
@@ -848,94 +859,22 @@ footer a {
     padding-bottom: 5rem;
   }
 
-  .serviciosPage h1 {
-    margin-top: 9rem;
-    font-size: 2.8rem;
-    color: white;
-  }
-  .serviciosTitle {
-    margin-bottom: 3rem;
-  }
-  .serviciosGrid {
-    gap: 0.2rem;
+  .TitleServicio h1 {
+    padding-left: 3rem;
   }
 
-  .serviciosPage {
-    height: 75vh;
-    padding: 0 1rem;
-    width: 100%;
+  .TitleServicio button {
+    margin-left: 3rem;
   }
 
-  .serviciosCard {
-    width: 95%;
-    padding: 1.5rem 0.7rem;
+  .descripcion {
+    background-size: 95%;
+    padding: 0 3rem;
   }
 
-  .serviciosCard h3 {
-    font-size: 1.3rem;
-  }
-
-  .serviciosCard .buttonServicios {
-    width: 68%;
-  }
-
-  .serviciosCard .buttonServicios:hover {
-    width: 80%;
-  }
-
-  .serviciosCard .buttonServicios:hover:after {
-    right: 14px;
-  }
-
-  .seguridadGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
-    padding: 3rem 3rem;
-    row-gap: 1.3rem;
-    margin-top: 2.5rem;
-  }
-
-  .seguridadGrid h2 {
-    padding-top: 2rem;
-  }
-
-  .socioGrid {
-    padding: 3rem 3rem;
-    row-gap: 1rem;
-    margin-top: 2.5rem;
-  }
-
-  .climaGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr;
-    grid-template-areas:
-      "climaTitle climaTitle"
-      "climaText1 climaImg1"
-      "climaText2 climaText2"
-      "climaImg2 climaImg2"
-      "climaText3 climaText3";
-    padding: 3rem 3rem;
-    row-gap: 1rem;
-    margin-top: 2.5rem;
-  }
-
-  .climaGrid .climaText3 {
-    width: 100%;
-  }
-
-  .servicioItem img {
-    width: 80%;
-  }
-
-  .servicioItem ul {
-    margin: 1rem 0px 1rem 0px;
-    margin-left: 1rem;
-  }
-
-  .servicioItem h3 {
-    margin-top: 2rem;
+  .ServicioCard {
+    width: 16rem;
+    height: 16rem;
   }
 }
 
@@ -958,7 +897,7 @@ footer a {
 
   .section1 img {
     width: 70%;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   .section1 h1 {
@@ -968,7 +907,7 @@ footer a {
   }
 
   .section1 p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 0;
   }
 
@@ -1100,104 +1039,31 @@ footer a {
     margin: 2rem 1rem;
   }
 
-  .serviciosPage {
-    height: 90rem;
-    padding: 0 1rem;
-    width: 100%;
+  .TitleServicio {
+    height: 70vh;
   }
 
-  .serviciosGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "one" "two" "three";
-    gap: 2rem;
+  .TitleServicio h1 {
+    padding-left: 1rem;
+    font-size: 3rem;
   }
 
-  .serviciosCard {
-    margin: 0 auto;
-    width: 75%;
-    height: 100%;
-    padding: 1rem 1rem;
+  .TitleServicio button {
+    margin-left: 1rem;
   }
 
-  .serviciosPage h1 {
-    margin-top: 6rem;
-    line-height: 4rem;
-    margin-bottom: 0.5rem;
+  .descripcion {
+    background-size: 150%;
+    height: 28rem;
+    padding: 0.5rem;
   }
 
-  .seguridadGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr 2fr 1fr;
-    grid-template-areas:
-      "seguridadTitle"
-      "seguridadText1"
-      "seguridadImg1"
-      "seguridadText2"
-      "seguridadImg2";
-
-    padding: 2.5rem 2rem;
-    row-gap: 0.2rem;
-    margin-top: 2.5rem;
+  .descripcion h3 {
+    margin-top: 7rem;
   }
 
-  .seguridadGrid .seguridadTitle {
-    padding-top: 6rem;
-  }
-
-  .seguridadGrid h2 {
-    height: 12rem;
-  }
-
-  .servicioItem ul {
-    margin-bottom: 10px;
-  }
-
-  .socioGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "socioTitle"
-      "socioText1"
-      "socioImg1"
-      "socioText2"
-      "socioImg2";
-
-    padding: 2.5rem 2rem;
-    row-gap: 0.2rem;
-    margin-top: 2.5rem;
-  }
-
-  .socioGrid .socioTitle {
-    margin-top: 5rem;
-  }
-
-  .climaGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr 1fr;
-    grid-template-areas:
-      "climaTitle"
-      "climaText1"
-      "climaImg1"
-      "climaText2"
-      "climaImg2"
-      "climaText3";
-
-    padding: 2.5rem 1.5rem;
-    row-gap: 0.2rem;
-    margin-top: 2.5rem;
-  }
-
-  .climaGrid .climaTitle {
-    margin-top: 5rem;
-  }
-
-  .servicioItem img {
-    width: 85%;
-  }
-
-  .climaGrid .climaText3 {
-    width: 100%;
+  .ofrecemos {
+    margin-top: 2rem;
   }
 
   footer {
