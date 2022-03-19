@@ -2,229 +2,230 @@
 
 .contenedorIndex {
   width: 100%;
-}
 
-.section1 {
-  height: 100vh;
-  align-items: center;
-  justify-items: center;
-  color: white;
-  background-image: url(../imagenes/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .section1 {
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    background-image: url(../imagenes/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-.section1 .title {
-  padding-left: 7rem;
-}
+    img {
+      width: 80%;
+    }
 
-.section1 h1 {
-  font-size: 3.5rem;
-  text-align: left;
-}
+    .title {
+      padding-left: 7rem;
 
-.section1 p {
-  font-size: 2rem;
-  text-align: left;
-}
+      h1 {
+        font-size: 3.5rem;
+        text-align: left;
+      }
 
-.section1 button {
-  font-size: 1.7rem;
-  position: relative;
-  right: 10rem;
-  color: $orange;
-  font-weight: bold;
-  background-color: white;
-}
+      p {
+        font-size: 2rem;
+        text-align: left;
+      }
 
-.section1 button:hover {
-  box-shadow: 2px 2px 5px rgb(161, 81, 0);
-  background-color: $green;
-}
+      button {
+        font-size: 1.7rem;
+        position: relative;
+        right: 10rem;
+        color: $orange;
+        font-weight: bold;
+        background-color: white;
 
-.section1 img {
-  width: 80%;
-}
+        &:hover {
+          box-shadow: 2px 2px 5px rgb(161, 81, 0);
+          background-color: $green;
+          color: white;
+        }
+      }
+    }
+  }
 
-.section2 {
-  padding: 4rem;
-  color: $green;
-}
+  .section2 {
+    padding: 4rem;
+    color: $green;
 
-.section2 h2 {
-  margin-top: 3rem;
-  font-size: 3rem;
-  font-family: "Open Sans", sans-serif;
-}
+    .servicioGrid {
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "zero uno"
+        "dos uno"
+        "dos tres"
+        ". tres";
+      justify-items: center;
+      align-items: center;
+      width: 90%;
 
-.section2 .servicioGrid {
-  margin: 0px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "zero uno"
-    "dos uno"
-    "dos tres"
-    ". tres";
-  justify-items: center;
-  align-items: center;
-  width: 90%;
-}
+      h2 {
+        margin-top: 3rem;
+        font-size: 3rem;
+        font-family: "Open Sans", sans-serif;
+      }
 
-.section2 .uno {
-  grid-area: uno;
-  background: $orange;
-  background: $orange_gradient;
-  color: white;
-}
+      .uno {
+        grid-area: uno;
+        background: $orange;
+        background: $orange_gradient;
+        color: white;
+      }
 
-.section2 .dos {
-  grid-area: dos;
-  background: $green;
-  background: $green_gradient;
-  color: white;
-  margin-top: 4rem;
-}
+      .dos {
+        grid-area: dos;
+        background: $green;
+        background: $green_gradient;
+        color: white;
+        margin-top: 4rem;
+      }
 
-.section2 .tres {
-  grid-area: tres;
-  background: $blue;
-  background: $blue_gradient;
-  color: white;
-  margin-top: 3rem;
-}
+      .tres {
+        grid-area: tres;
+        background: $blue;
+        background: $blue_gradient;
+        color: white;
+        margin-top: 3rem;
+      }
 
-.servicio {
-  width: 80%;
-  padding: 1.5rem 1rem;
-  border-radius: 1rem;
-  transition-duration: 0.5s;
-  transform: scale(1);
-}
+      .servicio {
+        width: 80%;
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+        transition-duration: 0.5s;
+        transform: scale(1);
 
-.servicio:hover {
-  box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
-  -webkit-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
-  transform: scale(1.03);
-}
+        &:hover {
+          box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+          -webkit-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+          -moz-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+          transform: scale(1.03);
+        }
 
-.servicio a {
-  text-decoration: none;
-  color: white;
-}
+        a {
+          text-decoration: none;
+          color: white;
+        }
 
-.servicio h3 {
-  margin: 1rem 0px;
-  font-size: 2.2rem;
-  font-family: "Martel Sans", sans-serif;
-}
+        h3 {
+          margin: 1rem 0px;
+          font-size: 2.2rem;
+          font-family: "Martel Sans", sans-serif;
+        }
 
-.servicio p {
-  font-size: 1.2rem;
-}
+        p {
+          font-size: 1.2rem;
+        }
 
-.servicio img {
-  width: 40%;
-  margin: 10px;
-}
+        img {
+          width: 40%;
+          margin: 10px;
+        }
 
-.servicio .buttonServicio {
-  margin-top: 15px;
-  font-size: 1.5rem;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  background-color: rgba(231, 231, 231, 0);
-  border: 3px solid;
-  border-color: white;
-  width: 60%;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+        .buttonServicio {
+          margin-top: 15px;
+          font-size: 1.5rem;
+          padding: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          color: white;
+          background-color: rgba(231, 231, 231, 0);
+          border: 3px solid;
+          border-color: white;
+          width: 60%;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
 
-.servicio .buttonServicio:hover {
-  width: 70%;
-  padding-right: 33px;
-  padding-left: 8px;
-}
+          &:hover {
+            width: 70%;
+            padding-right: 33px;
+            padding-left: 8px;
 
-.servicio .buttonServicio:after {
-  content: "";
-  width: 17px;
-  height: 17px;
-  background-image: url(../imagenes/arrow_icon.png);
-  background-size: cover;
-  background-repeat: no repeat;
-  display: inline-block;
-  position: absolute;
-  opacity: 0;
-  top: 22px;
-  right: -10px;
-  transition: 0.5s;
-}
+            &:after {
+              opacity: 1;
+              right: 45px;
+            }
+          }
 
-.servicio .buttonServicio:hover:after {
-  opacity: 1;
-  right: 45px;
-}
+          &:after {
+            content: "";
+            width: 17px;
+            height: 17px;
+            background-image: url(../imagenes/arrow_icon.png);
+            background-size: cover;
+            background-repeat: no repeat;
+            display: inline-block;
+            position: absolute;
+            opacity: 0;
+            top: 22px;
+            right: -10px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
 
-.section3 {
-  height: 100%;
-  padding: 5rem 9rem;
-  color: $orange;
-  background-image: url(../imagenes/background1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .section3 {
+    height: 100%;
+    padding: 5rem 9rem;
+    color: $orange;
+    background-image: url(../imagenes/background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.section3 h2 {
-  margin-bottom: 6rem;
-  padding-bottom: 1rem;
-  font-size: 3rem;
-  font-family: "Open Sans", sans-serif;
-}
+    h2 {
+      margin-bottom: 6rem;
+      padding-bottom: 1rem;
+      font-size: 3rem;
+      font-family: "Open Sans", sans-serif;
+    }
 
-.doula {
-  align-items: center;
-  justify-items: center;
-  margin: 0px auto;
-  color: white;
-}
+    img {
+      width: 90%;
+    }
 
-.doula p {
-  line-height: 2rem;
-  text-align: justify;
-  font-size: 1.2rem;
-  margin-bottom: 1.2rem;
-}
+    .doula {
+      align-items: center;
+      justify-items: center;
+      margin: 0px auto;
+      color: white;
 
-.doula h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1.2rem;
-  margin-top: 1rem;
-}
+      p {
+        line-height: 2rem;
+        text-align: justify;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
 
-.section3 img {
-  width: 90%;
-}
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+        margin-top: 1rem;
+      }
 
-.doula button {
-  color: $green;
-  background-color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
+      button {
+        color: $green;
+        background-color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 1rem;
 
-.doula button:hover {
-  box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.4);
-  background-color: $orange;
+        &:hover {
+          box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.4);
+          background-color: $orange;
+        }
+      }
+    }
+  }
 }
 
 /* termina inicio */
@@ -238,6 +239,7 @@
 
   .section1 {
     padding-top: 4rem;
+    background-size: 220%;
   }
 
   .section1 .title {
@@ -325,7 +327,7 @@
   }
 
   .section1 {
-    padding-top: 3rem;
+    background-size: 300%;
   }
 
   .section1 img {
@@ -363,7 +365,7 @@
   }
 
   .section2 {
-    padding: 2rem 1.2rem;
+    padding: 0rem 1.2rem;
   }
 
   .section2 h2 {

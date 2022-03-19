@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-@import "./partials/variables.scss";
-@import "./partials/header.scss";
-@import "./partials/index.scss";
+@import "./partials/variables";
+@import "./partials/header";
+@import "./partials/index";
 @import "./partials/contacto";
 @import "./partials/nosotros";
 @import "./partials/servicios";
-@import "./partials/footer.scss";
+@import "./partials/footer";
 
 body {
   text-align: center;
