@@ -1,0 +1,143 @@
+/* empieza contacto */
+
+.containerContacto {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  background-image: url(../imagenes/background5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.containerContacto > .row img {
+  width: 90%;
+}
+
+.containerContacto > .row {
+  margin-top: 5rem;
+}
+
+.contactoPage {
+  margin: 0 auto;
+  color: white;
+  padding: 2.5rem 0rem 2rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.contactoPage h1 {
+  margin: 15px 0px;
+  margin-right: 2rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: left;
+}
+
+.contactoPage p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+form {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.btnContacto {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px;
+  background-color: white;
+  color: rgb(238, 124, 7);
+}
+
+.btnContacto:hover {
+  background-color: rgb(78, 172, 49);
+  color: white;
+}
+
+label {
+  color: rgb(238, 124, 7);
+}
+
+.form-control {
+  background-color: #fff;
+  border: 1px solid #a35700;
+  border-radius: 0.6rem;
+}
+
+.form-check {
+  height: 3.5rem;
+}
+
+.form-select {
+  color: rgb(238, 124, 7);
+}
+
+.form-check-label {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* termina contacto */
+
+/* empieza responsive tablet */
+
+@media screen and (max-width: 768px) {
+  .containerContacto {
+    background-position: 10% 100%;
+  }
+
+  .containerContacto > .row {
+    margin-top: 7rem;
+  }
+
+  .contactoPage {
+    width: 80%;
+    padding: 2.5rem 0rem 2rem 0rem;
+  }
+
+  .containerContacto > .row img {
+    padding-top: 2rem;
+  }
+}
+
+/* termina responsive tablet */
+
+/* empieza responsive celular */
+
+@media screen and (max-width: 480px) {
+  .containerContacto > .row {
+    margin-top: 2rem;
+  }
+
+  .containerContacto {
+    padding-bottom: 5rem;
+  }
+
+  .containerContacto > .row img {
+    margin-top: 0;
+  }
+
+  .contactoPage {
+    width: 88%;
+    padding: 1rem 1rem;
+  }
+
+  .contactoPage h1 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .contactoPage p {
+    font-size: 1rem;
+  }
+
+  .form-check {
+    height: 6rem;
+    text-align: justify;
+  }
+}
+
+/* termina responsive celular */

@@ -1,0 +1,423 @@
+/* empieza inicio */
+
+.contenedorIndex {
+  width: 100%;
+}
+
+.section1 {
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  background-image: url(../imagenes/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section1 .title {
+  padding-left: 7rem;
+}
+
+.section1 h1 {
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.section1 p {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.section1 button {
+  font-size: 1.7rem;
+  position: relative;
+  right: 10rem;
+  color: rgb(238, 124, 7);
+  font-weight: bold;
+  background-color: white;
+}
+
+.section1 button:hover {
+  box-shadow: 2px 2px 5px rgb(161, 81, 0);
+  background-color: rgba(31, 155, 55, 1);
+}
+
+.section1 img {
+  width: 80%;
+}
+
+.section2 {
+  padding: 4rem;
+  color: rgb(78, 172, 49);
+}
+
+.section2 h2 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section2 .servicioGrid {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "zero uno"
+    "dos uno"
+    "dos tres"
+    ". tres";
+  justify-items: center;
+  align-items: center;
+  width: 90%;
+}
+
+.section2 .uno {
+  grid-area: uno;
+  background: rgb(238, 124, 7);
+  background: linear-gradient(
+    145deg,
+    rgb(226, 116, 5) 3%,
+    rgb(252, 129, 7) 98%
+  );
+  color: white;
+}
+
+.section2 .dos {
+  grid-area: dos;
+  background: rgb(78, 172, 49);
+  background: linear-gradient(
+    145deg,
+    rgba(78, 172, 49, 1) 3%,
+    rgba(31, 155, 55, 1) 98%
+  );
+  color: white;
+  margin-top: 4rem;
+}
+
+.section2 .tres {
+  grid-area: tres;
+  background: rgb(238, 124, 7);
+  background: linear-gradient(145deg, rgb(58, 99, 128) 3%, rgb(44, 46, 85) 98%);
+  color: white;
+  margin-top: 3rem;
+}
+
+.servicio {
+  width: 80%;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+
+.servicio:hover {
+  box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 8px 10px 15px -5px rgba(0, 0, 0, 0.38);
+  transform: scale(1.03);
+}
+
+.servicio a {
+  text-decoration: none;
+  color: white;
+}
+
+.servicio h3 {
+  margin: 1rem 0px;
+  font-size: 2.2rem;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.servicio p {
+  font-size: 1.2rem;
+}
+
+.servicio img {
+  width: 40%;
+  margin: 10px;
+}
+
+.servicio .buttonServicio {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(231, 231, 231, 0);
+  border: 3px solid;
+  border-color: white;
+  width: 60%;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.servicio .buttonServicio:hover {
+  width: 70%;
+  padding-right: 33px;
+  padding-left: 8px;
+}
+
+.servicio .buttonServicio:after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url(../imagenes/arrow_icon.png);
+  background-size: cover;
+  background-repeat: no repeat;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 22px;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.servicio .buttonServicio:hover:after {
+  opacity: 1;
+  right: 45px;
+}
+
+.section3 {
+  height: 100%;
+  padding: 5rem 9rem;
+  color: rgb(238, 124, 7);
+  background-image: url(../imagenes/background1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 h2 {
+  margin-bottom: 6rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.doula {
+  align-items: center;
+  justify-items: center;
+  margin: 0px auto;
+  color: white;
+}
+
+.doula p {
+  line-height: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.doula h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+
+.section3 img {
+  width: 90%;
+}
+
+.doula button {
+  color: rgba(31, 155, 55, 1);
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.doula button:hover {
+  box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.4);
+  background-color: rgb(238, 124, 7);
+}
+
+/* termina inicio */
+
+/* empieza responsive tablet */
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 2rem;
+  }
+
+  .section1 {
+    padding-top: 4rem;
+  }
+
+  .section1 .title {
+    text-align: center;
+    padding: 0 3rem;
+    margin-bottom: 11rem;
+  }
+
+  .section1 h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    bottom: 5rem;
+  }
+
+  .section1 img {
+    width: 60%;
+    padding-top: 3rem;
+  }
+
+  .section1 p {
+    text-align: center;
+    padding: 1rem 2rem 0.5rem 2rem;
+  }
+
+  .section1 button {
+    right: 0;
+  }
+
+  .section2 {
+    padding: 0 1rem;
+  }
+
+  .section2 .servicio {
+    width: 92%;
+    margin-bottom: 2rem;
+  }
+
+  .section2 .servicioGrid {
+    width: 100%;
+  }
+
+  .servicio .buttonServicio:hover {
+    width: 80%;
+  }
+
+  .servicio .buttonServicio:hover:after {
+    right: 35px;
+    top: 16px;
+  }
+
+  .servicio h3 {
+    font-size: 1.5rem;
+  }
+
+  .servicio .buttonServicio {
+    font-size: 1.2rem;
+  }
+
+  .section3 {
+    margin-top: 4rem;
+    padding: 0px 4rem;
+  }
+
+  .section3 img {
+    width: 70%;
+  }
+
+  .section3 h2 {
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .doula {
+    margin-bottom: 5rem;
+  }
+}
+
+/* termina responsive tablet */
+
+/* empieza responsive celular */
+
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 6rem;
+  }
+
+  .section1 {
+    padding-top: 3rem;
+  }
+
+  .section1 img {
+    width: 70%;
+    padding-top: 2rem;
+  }
+
+  .section1 h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .section1 p {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .section2 .servicioGrid {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 2fr);
+    grid-template-areas: "zero" "uno" "dos" "tres";
+    justify-items: center;
+    width: 100%;
+  }
+
+  .section2 .servicio {
+    width: 100%;
+  }
+
+  .section2 h2 {
+    margin-top: 1rem;
+  }
+
+  .section2 {
+    padding: 2rem 1.2rem;
+  }
+
+  .section2 h2 {
+    line-height: 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .servicio .buttonServicio {
+    width: 75%;
+    font-size: 1.2rem;
+  }
+
+  .servicio .buttonServicio:hover {
+    width: 90%;
+  }
+
+  .servicio .buttonServicio:hover:after {
+    top: 17px;
+    right: 50px;
+  }
+
+  .section3 {
+    padding: 0px 1rem;
+  }
+
+  .section3 h2 {
+    font-size: 2.3rem;
+  }
+
+  .doula {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .doula p {
+    margin: 2rem;
+  }
+
+  .doula h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .section3 img {
+    width: 90%;
+  }
+}
+
+/* termina responsive celular */

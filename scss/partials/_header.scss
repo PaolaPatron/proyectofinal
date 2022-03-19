@@ -1,0 +1,38 @@
+.nav-item {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-item {
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.nav-link {
+  color: rgb(238, 124, 7) !important;
+  font-size: 1.2rem;
+  transition: color;
+}
+
+.nav-link:hover {
+  color: rgba(31, 155, 55, 1) !important;
+}
+
+.btn-navbar {
+  color: white;
+  background-color: rgb(238, 124, 7);
+}
+
+.btn-navbar:hover {
+  background-color: rgba(31, 155, 55, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .nav-item {
+    padding-right: 0;
+  }
+}
