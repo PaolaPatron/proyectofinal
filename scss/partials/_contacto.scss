@@ -1,143 +1,127 @@
-/* empieza contacto */
-
 .containerContacto {
   padding-bottom: 3rem;
   padding-top: 1rem;
   background-image: url(../imagenes/background5.png);
-  background-size: cover;
+  background-size: 130%;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: 0% 100%;
 
-.containerContacto > .row img {
-  width: 90%;
-}
-
-.containerContacto > .row {
-  margin-top: 5rem;
-}
-
-.contactoPage {
-  margin: 0 auto;
-  color: white;
-  padding: 2.5rem 0rem 2rem 3rem;
-  margin-bottom: 2rem;
-}
-
-.contactoPage h1 {
-  margin: 15px 0px;
-  margin-right: 2rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  text-align: left;
-}
-
-.contactoPage p {
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
-form {
-  padding: 0.5rem;
-  text-align: left;
-}
-
-.btnContacto {
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 0px;
-  background-color: white;
-  color: $orange;
-}
-
-.btnContacto:hover {
-  background-color: $green;
-  color: white;
-}
-
-label {
-  color: $orange;
-}
-
-.form-control {
-  background-color: #fff;
-  border: 1px solid #a35700;
-  border-radius: 0.6rem;
-}
-
-.form-check {
-  height: 3.5rem;
-}
-
-.form-select {
-  color: $orange;
-}
-
-.form-check-label {
-  color: white;
-  font-size: 0.8rem;
-}
-
-/* termina contacto */
-
-/* empieza responsive tablet */
-
-@media screen and (max-width: 768px) {
-  .containerContacto {
-    background-position: 10% 100%;
+  @media screen and (max-width: 992px) {
+    background-size: cover;
   }
 
-  .containerContacto > .row {
-    margin-top: 7rem;
-  }
-
-  .contactoPage {
-    width: 80%;
-    padding: 2.5rem 0rem 2rem 0rem;
-  }
-
-  .containerContacto > .row img {
-    padding-top: 2rem;
-  }
-}
-
-/* termina responsive tablet */
-
-/* empieza responsive celular */
-
-@media screen and (max-width: 480px) {
-  .containerContacto > .row {
-    margin-top: 2rem;
-  }
-
-  .containerContacto {
+  @media screen and (max-width: 480px) {
     padding-bottom: 5rem;
   }
 
-  .containerContacto > .row img {
-    margin-top: 0;
-  }
+  > .row {
+    margin-top: 5rem;
 
-  .contactoPage {
-    width: 88%;
-    padding: 1rem 1rem;
-  }
+    @media screen and (max-width: 992px) {
+      margin-top: 7rem;
+    }
 
-  .contactoPage h1 {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
+    @media screen and (max-width: 480px) {
+      margin-top: 2rem;
+    }
 
-  .contactoPage p {
-    font-size: 1rem;
-  }
+    img {
+      width: 90%;
 
-  .form-check {
-    height: 6rem;
-    text-align: justify;
+      @media screen and (max-width: 992px) {
+        padding-top: 2rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 0;
+      }
+    }
+
+    .contactoPage {
+      margin: 0 auto;
+      color: white;
+      padding: 2.5rem 0rem 2rem 3rem;
+      margin-bottom: 2rem;
+
+      @media screen and (max-width: 992px) {
+        width: 80%;
+        padding: 2.5rem 0rem 2rem 0rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 88%;
+        padding: 1rem 1rem;
+      }
+
+      h1 {
+        margin: 15px 0px;
+        margin-right: 2rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-align: left;
+
+        @media screen and (max-width: 480px) {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+
+        @media screen and (max-width: 480px) {
+          font-size: 1rem;
+        }
+      }
+
+      form {
+        padding: 0.5rem;
+        text-align: left;
+
+        label {
+          color: $orange;
+        }
+
+        .btnContacto {
+          font-size: 1rem;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          border: 0px;
+          background-color: white;
+          color: $orange;
+
+          &:hover {
+            background-color: $green;
+            color: white;
+          }
+        }
+
+        .form-control {
+          background-color: #fff;
+          border: 1px solid #a35700;
+          border-radius: 0.6rem;
+        }
+
+        .form-check {
+          height: 3.5rem;
+
+          @media screen and (max-width: 480px) {
+            height: 6rem;
+            text-align: justify;
+          }
+
+          .form-check-label {
+            color: white;
+            font-size: 0.8rem;
+          }
+        }
+
+        .form-select {
+          color: $orange;
+        }
+      }
+    }
   }
 }
-
-/* termina responsive celular */
