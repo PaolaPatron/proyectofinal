@@ -43,7 +43,6 @@
   }
 }
 
-/* empieza inicio */
 .contenedorIndex {
   width: 100%;
 }
@@ -1076,15 +1075,14 @@ label {
 }
 
 /* termina responsive celular */
-/* empieza footer */
 footer {
   font-weight: 300;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  -ms-grid-rows: 2fr 0.5fr;
+      grid-template-rows: 2fr 0.5fr;
       grid-template-areas: "first last" "copyright copyright";
   bottom: 0;
   width: 100%;
@@ -1096,6 +1094,55 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 25px 20px 15px 20px;
+    font-size: 1.2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-template-areas: "first" "last" "copyright";
+    justify-items: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer .footerDiv {
+  margin-bottom: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  footer .footerDiv {
+    margin-bottom: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer ul {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 480px) {
+  footer a {
+    font-size: 1.2rem;
+  }
 }
 
 footer .first {
@@ -1118,37 +1165,6 @@ footer .copyright {
   font-size: 1rem;
 }
 
-.footerDiv {
-  margin-bottom: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer ul {
-  list-style: none;
-  text-align: left;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.3rem;
-}
-
-/* termina footer */
-/* empieza responsive celular */
-@media screen and (max-width: 480px) {
-  footer {
-    padding: 25px 20px 15px 20px;
-    font-size: 1.2rem;
-  }
-  footer a {
-    font-size: 1.2rem;
-  }
-}
-
-/* termina responsive celular */
 body {
   text-align: center;
   background: #e7e7e7;
