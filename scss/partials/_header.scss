@@ -13,22 +13,22 @@
 }
 
 .nav-link {
-  color: rgb(238, 124, 7) !important;
+  color: $orange !important;
   font-size: 1.2rem;
   transition: color;
 }
 
 .nav-link:hover {
-  color: rgba(31, 155, 55, 1) !important;
+  color: $green !important;
 }
 
 .btn-navbar {
   color: white;
-  background-color: rgb(238, 124, 7);
+  background-color: $orange;
 }
 
 .btn-navbar:hover {
-  background-color: rgba(31, 155, 55, 1);
+  background-color: $green;
 }
 
 @media screen and (max-width: 480px) {

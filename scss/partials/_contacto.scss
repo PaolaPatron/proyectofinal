@@ -49,16 +49,16 @@ form {
   cursor: pointer;
   border: 0px;
   background-color: white;
-  color: rgb(238, 124, 7);
+  color: $orange;
 }
 
 .btnContacto:hover {
-  background-color: rgb(78, 172, 49);
+  background-color: $green;
   color: white;
 }
 
 label {
-  color: rgb(238, 124, 7);
+  color: $orange;
 }
 
 .form-control {
@@ -72,7 +72,7 @@ label {
 }
 
 .form-select {
-  color: rgb(238, 124, 7);
+  color: $orange;
 }
 
 .form-check-label {

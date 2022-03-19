@@ -33,14 +33,14 @@
   font-size: 1.7rem;
   position: relative;
   right: 10rem;
-  color: rgb(238, 124, 7);
+  color: $orange;
   font-weight: bold;
   background-color: white;
 }
 
 .section1 button:hover {
   box-shadow: 2px 2px 5px rgb(161, 81, 0);
-  background-color: rgba(31, 155, 55, 1);
+  background-color: $green;
 }
 
 .section1 img {
@@ -49,7 +49,7 @@
 
 .section2 {
   padding: 4rem;
-  color: rgb(78, 172, 49);
+  color: $green;
 }
 
 .section2 h2 {
@@ -75,31 +75,23 @@
 
 .section2 .uno {
   grid-area: uno;
-  background: rgb(238, 124, 7);
-  background: linear-gradient(
-    145deg,
-    rgb(226, 116, 5) 3%,
-    rgb(252, 129, 7) 98%
-  );
+  background: $orange;
+  background: $orange_gradient;
   color: white;
 }
 
 .section2 .dos {
   grid-area: dos;
-  background: rgb(78, 172, 49);
-  background: linear-gradient(
-    145deg,
-    rgba(78, 172, 49, 1) 3%,
-    rgba(31, 155, 55, 1) 98%
-  );
+  background: $green;
+  background: $green_gradient;
   color: white;
   margin-top: 4rem;
 }
 
 .section2 .tres {
   grid-area: tres;
-  background: rgb(238, 124, 7);
-  background: linear-gradient(145deg, rgb(58, 99, 128) 3%, rgb(44, 46, 85) 98%);
+  background: $blue;
+  background: $blue_gradient;
   color: white;
   margin-top: 3rem;
 }
@@ -184,7 +176,7 @@
 .section3 {
   height: 100%;
   padding: 5rem 9rem;
-  color: rgb(238, 124, 7);
+  color: $orange;
   background-image: url(../imagenes/background1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -223,7 +215,7 @@
 }
 
 .doula button {
-  color: rgba(31, 155, 55, 1);
+  color: $green;
   background-color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -232,7 +224,7 @@
 
 .doula button:hover {
   box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.4);
-  background-color: rgb(238, 124, 7);
+  background-color: $orange;
 }
 
 /* termina inicio */
