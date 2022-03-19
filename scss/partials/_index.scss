@@ -17,7 +17,7 @@
       height: 100%;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 576px) {
       background-size: 300%;
     }
 
@@ -28,7 +28,7 @@
         width: 60%;
         padding-top: 3rem;
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 576px) {
         width: 70%;
         padding-top: 0.5rem;
       }
@@ -52,7 +52,7 @@
           text-align: center;
           bottom: 5rem;
         }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
           font-size: 3rem;
           line-height: 4rem;
           margin-bottom: 0.5rem;
@@ -67,8 +67,8 @@
           text-align: center;
           padding: 1rem 2rem 0.5rem 2rem;
         }
-        @media screen and (max-width: 480px) {
-          font-size: 1.3rem;
+        @media screen and (max-width: 590px) {
+          font-size: 1.5rem;
           padding: 0;
           margin: 0;
         }
@@ -84,6 +84,10 @@
 
         @media screen and (max-width: 992px) {
           right: 0;
+        }
+
+        @media screen and (max-width: 590px) {
+          margin-top: 2rem;
         }
 
         &:hover {
@@ -103,7 +107,7 @@
       padding: 0 1rem;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 590px) {
       padding: 0rem 1.2rem;
     }
 
@@ -125,7 +129,7 @@
         width: 100%;
       }
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 590px) {
         margin: 0px auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -140,7 +144,7 @@
         font-size: 3rem;
         font-family: "Open Sans", sans-serif;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 590px) {
           margin-top: 1rem;
           line-height: 3.5rem;
           padding-bottom: 2rem;
@@ -186,7 +190,7 @@
           margin-bottom: 2rem;
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 590px) {
           width: 100%;
         }
 
@@ -240,7 +244,7 @@
             font-size: 1.2rem;
           }
 
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 590px) {
             width: 75%;
             font-size: 1.2rem;
           }
@@ -254,7 +258,7 @@
               width: 80%;
             }
 
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 590px) {
               width: 90%;
             }
 
@@ -266,7 +270,7 @@
                 right: 35px;
                 top: 16px;
               }
-              @media screen and (max-width: 480px) {
+              @media screen and (max-width: 590px) {
                 top: 17px;
                 right: 50px;
               }
@@ -307,7 +311,7 @@
       padding-bottom: 5rem;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 590px) {
       padding: 0px 1rem;
     }
 
@@ -321,7 +325,7 @@
         padding: 2rem 0;
         margin-bottom: 1rem;
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 590px) {
         font-size: 2.3rem;
       }
     }
@@ -331,7 +335,7 @@
       @media screen and (max-width: 992px) {
         width: 70%;
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 590px) {
         width: 90%;
       }
     }
@@ -346,7 +350,7 @@
       margin-bottom: 5rem;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 590px) {
       justify-content: center;
       padding: 0;
     }
@@ -357,7 +361,7 @@
       font-size: 1.2rem;
       margin-bottom: 1.2rem;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 590px) {
         margin: 2rem;
       }
     }
@@ -366,7 +370,7 @@
       font-size: 1.8rem;
       margin-bottom: 1.2rem;
       margin-top: 1rem;
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 590px) {
         font-size: 1.5rem;
         margin-bottom: 1.2rem;
       }
