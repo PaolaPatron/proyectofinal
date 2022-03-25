@@ -23,3 +23,21 @@ $blue_gradient: linear-gradient(
   rgb(58, 99, 128) 3%,
   rgb(44, 46, 85) 98%
 );
+
+// Boton
+
+@mixin botones($hover) {
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0px;
+  font-weight: bold;
+  background-color: $white;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $white;
+    box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.4);
+    background-color: $hover;
+  }
+}

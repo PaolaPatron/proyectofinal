@@ -17,12 +17,9 @@
     }
   }
   .btn-navbar {
+    @include botones($green);
     color: white;
     background-color: $orange;
-
-    &:hover {
-      background-color: $green;
-    }
   }
 }
 
