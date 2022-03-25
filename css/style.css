@@ -147,8 +147,7 @@
 
 .contenedorIndex .section1 .title button {
   font-size: 1.7rem;
-  position: relative;
-  right: 10rem;
+  vertical-align: baseline;
   color: #ee7c07;
   font-weight: bold;
   background-color: white;
