@@ -925,6 +925,7 @@
 @media screen and (max-width: 480px) {
   .TitleServicio button {
     margin-left: 1rem;
+    padding-left: 5px;
   }
 }
 
