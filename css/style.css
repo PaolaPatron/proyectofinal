@@ -1150,17 +1150,17 @@ footer {
   font-weight: 300;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 0.2fr;
       grid-template-rows: 1fr 0.2fr;
-      grid-template-areas: "first last" "copyright copyright";
+      grid-template-areas: "first second last" "copyright copyright copyright";
   bottom: 0;
   width: 100%;
-  background: #2c2c2c;
-  padding: 25px 0px 15px 0px;
+  background: #e7e7e7;
+  padding: 35px 0px 15px 0px;
   font-size: 1.3rem;
-  color: white;
+  color: #ee7c07;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1175,7 +1175,7 @@ footer {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 0.5fr 0.5fr;
         grid-template-rows: 1fr 0.5fr 0.5fr;
-        grid-template-areas: "first" "last" "copyright";
+        grid-template-areas: "first" "last" "second" "copyright";
     justify-items: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1206,7 +1206,7 @@ footer ul {
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: #ee7c07;
   font-size: 1.3rem;
 }
 
@@ -1216,22 +1216,34 @@ footer a {
   }
 }
 
+footer a:hover {
+  color: #4eac31;
+}
+
 footer .first {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: first;
 }
 
-footer .last {
+footer .second {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  grid-area: second;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+footer .last {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: last;
 }
 
 footer .copyright {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: copyright;
   font-size: 1rem;
 }
