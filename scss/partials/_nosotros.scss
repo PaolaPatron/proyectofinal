@@ -33,6 +33,10 @@
         padding: 1rem 2.5rem;
         margin: 1rem 0px;
       }
+
+      @media screen and (max-width: 480px) {
+        padding: 1rem 1.5rem;
+      }
     }
 
     h1 {
@@ -69,7 +73,7 @@
 
     @media screen and (max-width: 480px) {
       padding-bottom: 0;
-      padding-top: 3rem;
+      padding-top: 1rem;
       background-position: left top;
       margin-top: -5rem;
     }
@@ -80,6 +84,11 @@
 
       @media screen and (max-width: 992px) {
         padding-bottom: 5rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        padding-top: 10rem;
+        padding-bottom: 2rem;
       }
     }
 
@@ -104,6 +113,11 @@
 
       @media screen and (max-width: 992px) {
         width: 45%;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 65%;
+        padding-bottom: 1rem;
       }
     }
 
