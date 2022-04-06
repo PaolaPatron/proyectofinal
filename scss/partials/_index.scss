@@ -122,7 +122,7 @@
         margin: 0px auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr repeat(3, 2fr);
+        grid-template-rows: 0.2fr repeat(3, 1fr);
         grid-template-areas: "zero" "uno" "dos" "tres";
         justify-items: center;
         width: 100%;
@@ -157,6 +157,10 @@
         background: $green_gradient;
         color: white;
         margin-top: 4rem;
+
+        @media screen and (max-width: 590px) {
+          margin-top: 0rem;
+        }
       }
 
       .tres {
@@ -181,6 +185,7 @@
 
         @media screen and (max-width: 590px) {
           width: 100%;
+          margin-bottom: 0rem;
         }
 
         &:hover {

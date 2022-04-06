@@ -28,7 +28,6 @@ footer {
     align-items: center;
 
     @media screen and (max-width: 480px) {
-      margin-bottom: 0rem;
       align-items: center;
     }
   }
@@ -54,15 +53,38 @@ footer {
 
   .first {
     grid-area: first;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 0rem;
+
+    }
   }
 
   .second {
     grid-area: second;
     justify-self: center;
+    
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1rem;
+
+    }
   }
 
   .last {
     grid-area: last;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 0rem;
+
+    }
+
+    .social_media {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
   }
 
   .copyright {
