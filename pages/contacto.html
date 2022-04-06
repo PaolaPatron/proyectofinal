@@ -4,92 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Contacto de Capas Consulting: Contáctanos para realizar servicios de seguridad social, clima organizacional o formación socio laboral. Te asesoramos y ayudamos.">
+    <meta name="keywords" content="contacto, servicios, consultoria, gestion, social, ambiente laboral, seguridad social, asesoramiento"> 
     <link rel="shortcut icon" href="../imagenes/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Open+Sans:wght@700&family=PT+Sans+Caption&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Página de Contacto - Capas Consulting - Gestión Social</title>
 </head>
 <body>
     <!--navegacion-->
     <header class="header">        
-        <nav class="menu">
-            <a href="../index.html"><img src="../imagenes/logo.png" alt="Logo Capas Consulting" width="100px" class="logo"></a>
-            <ul class="navlinks">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container-fluid ">
+                <a class="navbar-brand ms-4" href="../index.html">
+                    <img src="../imagenes/logo.png" alt="Capas Consulting Logo" width="70" height="70">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Capas Consulting</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="./seguridad.html">Seguridad Social</a></li>
+                        <li><a class="dropdown-item" href="./formacion.html">Formación Socio Laboral</a></li>
+                        <li><a class="dropdown-item" href="./clima.html">Clima Organizacional</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                      </li>
+                  </ul>
+                  <a href="./contacto.html" target="_parent"><button type="button" class="btn btn-primary btn-navbar">Contáctanos</button></a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--fin navegacion-->
-    <!--contenido principal-->  
-    <main class="contactoPage" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-        <section class="contacto">
-            <h1>¿Estás interesado en nuestros Servicios?</h1>
-            <p>Escríbenos y nos comunicaremos contigo a la brevedad posible.</p>
-        </section>
-        <section>
-            <form action="">
-                <fieldset>
-                    <legend>Contacto</legend> 
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Aquí coloca tu nombre" required>                    
-                    </div><br>
-                    <div>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Aquí coloca tu apellido" required>
-                    </div><br>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Escribe aquí tu email" required>
-                    </div><br>
-                    <div>
-                        <label for="empresa">Empresa</label>
-                        <input type="text" name="empresa" id="empresa" class="form-control" placeholder="Escribe el nombre de tu empresa" required>
-                    </div><br>
-                    <div>
-                        <label for="celular">Número de Contacto</label>
-                        <input type="tel" name="celular" id="celular" class="form-control" placeholder="Escribe un número de contacto" >
-                    </div><br>
-                    <div>
-                        <label for="comentario">¿Cuál es el servicio que deseas?</label><br>
-                        <textarea name="comentario" id="" cols="50" rows="10"></textarea>
-                    </div><br>
-                    <div>
-                        <input type="submit" value="Enviar" name="submit" id="">
+    <!--contenido principal-->
+    <main>
+    <div class="container-fluid containerContacto">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-12 col-lg-6 offset-lg-1 contactoPage align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <h1>¿Estás interesado en nuestros Servicios?</h1>
+                <p>Elige el servicio con el cual quieres que te asesoremos y cuéntanos cuales son tus necesidades para poder ayudarte de la manera más eficiente. Nos comunicaremos contigo a la brevedad posible.</p>
+                <form>
+                    <div class="row">
+                         <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre">
+                                <label for="nombre" class="form-label" placeholder="Password">Nombre</label>
+                                
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">                       
+                                <input type="text" class="form-control" id="apellido">
+                                <label for="apellido" class="form-label">Apellido</label>
+                            </div>
+                        </div>
                     </div>
-                </fieldset>    
-            </form>            
-            
-        </section>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="form-floating mb-3">                      
+                              <input type="email" class="form-control" id="exampleInputEmail1">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">                                
+                                <input type="text" class="form-control" id="empresa">
+                                <label for="empresa" class="form-label">Empresa</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating mb-3">                       
+                                <input type="tel" class="form-control" id="celular">
+                                <label for="celular" class="form-label">Celular</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Seleccione un servicio</option>
+                                <option value="seguridad">Seguridad Social</option>
+                                <option value="formacion">Formación Socio Laboral</option>
+                                <option value="clima">Clima Organizacional</option>
+                              </select>
+                        </div>
+                    </div>                      
+                    <div class="form-floating mb-3">                    
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    <label for="textarea" class="form-label">Coméntanos</label>
+                    </div>  
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="consentimiento">
+                        <label class="form-check-label" for="consentimiento">
+                            Doy mi consentimiento para que esta web almacene la información que envío para que puedan responder a mi petición.
+                        </label>
+                      </div>
+                    <button type="submit" class="btn btn-primary btnContacto">Enviar</button>
+                  </form>
+            </div>
+            <div class="col-sm-8  offset-lg-0 col-lg-5" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"><img src="../imagenes/capas_img2.png" alt="Capas Consulting Ilustración"></div>
+        </div>
+    </div> 
     </main>
     <!--fin contenido principal-->  
     <!--footer-->
     <footer class="footer">
-        <div class="footerDiv first">
-            <ul>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contáctanos</a></li>
-            </ul>
-        </div>
-        <div class="footerDiv last">
-            <ul>
-                <li>Nuestro número: 9999999</li>
-                <li><a href="https://www.facebook.com/capasconsultingsac" target="_blank">Facebook</a></li>
-            </ul>
-        </div>
-        <p class="copyright">Capas Consulting © 2022. Todos los derechos reservados</p>
-    </footer>
+      <div class="footerDiv first">
+          <ul>
+            <li>Servicios</li>
+                <ul>
+                    <li><a href="../pages/seguridad.html">Seguridad Social</a></li>
+                    <li><a href="../pages/formacion.html">Formación Socio Laboral</a></li>
+                    <li><a href="../pages/clima.html">Clima Organizacional</a></li>
+                </ul>
+          </ul>
+      </div>
+      <div class="footerDiv second"><a href="../index.html"><img src="../imagenes/logo.png" alt="CapAS Consulting Logo" width="120px"></a></div>
+      <div class="footerDiv last">
+          <ul>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contáctanos</a></li>
+            <li><a href="https://www.facebook.com/capasconsultingsac" target="_blank">Facebook</a></li>
+          </ul>
+      </div>
+      <p class="copyright">Capas Consulting © 2022. Todos los derechos reservados</p>
+  </footer>
     <!--fin footer-->       
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
