@@ -2,9 +2,13 @@
   padding-bottom: 3rem;
   padding-top: 1rem;
   background-image: url(../imagenes/background5.png);
-  background-size: 130%;
+  background-size: 110%;
   background-repeat: no-repeat;
   background-position: 0% 100%;
+
+  @media screen and (max-width: 1300px) {
+    background-size: cover;
+  }
 
   @media screen and (max-width: 992px) {
     background-size: cover;
