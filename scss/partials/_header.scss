@@ -6,6 +6,10 @@
     text-align: center;
     padding-right: 1rem;
 
+    @media screen and (max-width: 480px) {
+        padding-right: 0;
+    }
+
     .nav-link {
       color: $orange !important;
       font-size: 1.2rem;
@@ -20,11 +24,5 @@
     @include botones($green);
     color: white;
     background-color: $orange;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .nav-item {
-    padding-right: 0;
   }
 }
