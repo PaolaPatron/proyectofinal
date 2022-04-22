@@ -141,12 +141,17 @@
 
 .ServicioSection {
   margin: 0px auto;
+  padding: 0 5rem;
   display: inline-block;
   justify-items: center;
   align-items: center;
   width: 90%;
   padding-bottom: 6rem;
   margin-top: 4rem;
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
 
   h2 {
     margin-bottom: 2rem;
